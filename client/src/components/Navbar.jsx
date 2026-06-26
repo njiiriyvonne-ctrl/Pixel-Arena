@@ -34,7 +34,7 @@ export default function Navbar() {
     }}>
       <Link to="/" style={{
         fontFamily: 'monospace', fontSize: '1.4rem', fontWeight: 900,
-        background: 'linear-gradient(135deg, #0066FF, #00D9FF)',
+        background: 'linear-gradient(135deg, #0D4A6B, #00E5FF)',
         WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
         letterSpacing: '0.05em'
       }}>
@@ -52,9 +52,9 @@ export default function Navbar() {
             <Link key={path} to={path} style={{
               padding: '0.5rem 1rem', borderRadius: 'var(--radius-sm)',
               fontSize: '0.85rem', fontWeight: 600,
-              color: isActive(path) ? 'var(--cyan)' : 'var(--text2)',
-              background: isActive(path) ? 'rgba(0,217,255,0.1)' : 'transparent',
-              border: isActive(path) ? '1px solid rgba(0,217,255,0.3)' : '1px solid transparent',
+              color: isActive(path) ? 'var(--gold)' : 'var(--text2)',
+              background: isActive(path) ? 'rgba(255,107,0,0.1)' : 'transparent',
+              border: isActive(path) ? '1px solid rgba(255,107,0,0.3)' : '1px solid transparent',
               transition: 'all 0.3s ease'
             }}>{label}</Link>
           ))}

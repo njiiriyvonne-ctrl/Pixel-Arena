@@ -9,12 +9,12 @@ export default function Home() {
       minHeight: '100vh', display: 'flex', flexDirection: 'column',
       alignItems: 'center', justifyContent: 'center', textAlign: 'center',
       padding: '2rem', paddingTop: '80px',
-      background: 'radial-gradient(ellipse at 50% 20%, rgba(0,102,255,0.2) 0%, rgba(255,184,0,0.1) 100%)'
+      background: 'radial-gradient(ellipse at 50% 20%, rgba(13,74,107,0.25) 0%, rgba(255,107,0,0.1) 100%)'
     }}>
       <div style={{
         display: 'inline-flex', alignItems: 'center', gap: '0.6rem',
-        background: 'linear-gradient(135deg, rgba(0,217,255,0.15), rgba(0,102,255,0.15))',
-        border: '1px solid rgba(0,217,255,0.3)',
+        background: 'linear-gradient(135deg, rgba(0,229,255,0.15), rgba(13,74,107,0.15))',
+        border: '1px solid rgba(0,229,255,0.3)',
         color: 'var(--cyan)', padding: '0.5rem 1.2rem', borderRadius: '100px',
         fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.1em',
         marginBottom: '2rem'
@@ -26,7 +26,7 @@ export default function Home() {
       <h1 style={{
         fontSize: 'clamp(2.5rem, 10vw, 5.5rem)', fontWeight: 900,
         lineHeight: 1.05, marginBottom: '1.5rem', letterSpacing: '-0.02em',
-        background: 'linear-gradient(135deg, #0066FF, #00D9FF)',
+        background: 'linear-gradient(135deg, #0D4A6B, #00E5FF)',
         WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'
       }}>
         COMPETE.

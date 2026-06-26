@@ -1,40 +1,40 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  /* Dark backgrounds - trust and focus */
-  --bg: #0F0F1E;
-  --bg2: #1A1A2E;
-  --bg3: #242450;
-  --bg4: #2D2D4A;
+  /* Dark backgrounds - sleek & modern */
+  --bg: #0A0F14;
+  --bg2: #0F1820;
+  --bg3: #1A2635;
+  --bg4: #233342;
 
   /* Borders with better contrast */
   --border: rgba(255,255,255,0.08);
   --border2: rgba(255,255,255,0.15);
 
-  /* Primary: Electric Blue - technology, trust, energy */
-  --accent: #0066FF;
-  --accent2: #0052CC;
-  --accent3: #004DB8;
+  /* Primary: Deep Teal - tech, trust, modern */
+  --accent: #0D4A6B;
+  --accent2: #0A3A52;
+  --accent3: #073040;
 
-  /* Secondary: Cyan - modern, futuristic, attention-grabbing */
-  --cyan: #00D9FF;
-  --cyan2: #00B8CC;
+  /* Secondary: Bright Cyan - modern, futuristic, sleek */
+  --cyan: #00E5FF;
+  --cyan2: #00BCC9;
 
-  /* Tertiary: Gold/Orange - victory, premium, achievement */
-  --gold: #FFB800;
-  --gold2: #FF9500;
+  /* Tertiary: Warm Orange - achievement, action, energy */
+  --gold: #FF6B00;
+  --gold2: #FF5A00;
 
   /* Emotional colors */
   --success: #2ECC71;
   --success2: #27AE60;
   --warning: #F39C12;
-  --danger: #E74C3C;
-  --danger2: #C0392B;
+  --danger: #FF4444;
+  --danger2: #CC0000;
 
   /* Text hierarchy */
-  --text: #F5F7FA;
-  --text2: #A8B2C1;
-  --text3: #6B7280;
+  --text: #E8F1F6;
+  --text2: #99B0C4;
+  --text3: #6B7F94;
 
   /* Payment specific */
   --mpesa: #2ECC71;
@@ -73,8 +73,8 @@ input, select, textarea {
 
 input:focus, select:focus {
   border-color: var(--cyan);
-  background: rgba(36,36,80,0.95);
-  box-shadow: 0 0 20px rgba(0,217,255,0.3);
+  background: rgba(26,38,53,0.95);
+  box-shadow: 0 0 20px rgba(0,229,255,0.3);
 }
 
 .btn {
@@ -111,29 +111,29 @@ input:focus, select:focus {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #0066FF, #0052CC);
-  color: #fff;
-  box-shadow: 0 8px 24px rgba(0,102,255,0.4);
+  background: linear-gradient(135deg, #0D4A6B, #0A3A52);
+  color: #E8F1F6;
+  box-shadow: 0 8px 24px rgba(13,74,107,0.5);
   font-weight: 700;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(0,102,255,0.5);
-  background: linear-gradient(135deg, #0052CC, #004DB8);
+  box-shadow: 0 12px 32px rgba(13,74,107,0.6);
+  background: linear-gradient(135deg, #0A3A52, #073040);
 }
 
 .btn-neon {
-  background: linear-gradient(135deg, #FFB800, #FF9500);
-  color: #0F0F1E;
+  background: linear-gradient(135deg, #FF6B00, #FF5A00);
+  color: #0A0F14;
   font-weight: 700;
-  box-shadow: 0 8px 24px rgba(255,184,0,0.4);
+  box-shadow: 0 8px 24px rgba(255,107,0,0.4);
 }
 
 .btn-neon:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(255,184,0,0.5);
-  background: linear-gradient(135deg, #FF9500, #FF8C00);
+  box-shadow: 0 12px 32px rgba(255,107,0,0.5);
+  background: linear-gradient(135deg, #FF5A00, #FF4A00);
 }
 
 .btn-ghost {
