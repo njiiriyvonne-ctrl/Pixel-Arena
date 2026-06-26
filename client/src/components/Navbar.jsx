@@ -33,27 +33,29 @@ export default function Navbar() {
       padding: '0 2rem', height: '64px'
     }}>
       <Link to="/" style={{
-        fontFamily: 'monospace', fontSize: '1.4rem', fontWeight: 700,
-        background: 'linear-gradient(135deg, #7C5CFF, #00FFB3)',
-        WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'
+        fontFamily: 'monospace', fontSize: '1.4rem', fontWeight: 900,
+        background: 'linear-gradient(135deg, #0066FF, #00D9FF)',
+        WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+        letterSpacing: '0.05em'
       }}>
-        PIXEL<span style={{ WebkitTextFillColor: 'var(--neon)' }}>ARENA</span>
+        PIXEL<span style={{ WebkitTextFillColor: 'var(--gold)' }}>ARENA</span>
       </Link>
 
       {user && (
         <div style={{ display: 'flex', gap: '0.25rem' }}>
           {[
-            { path: '/lobby', label: 'Lobby' },
+            { path: '/lobby', label: '🎮 Lobby' },
             { path: '/live', label: '🔴 Live' },
-            { path: '/leaderboard', label: 'Rankings' },
-            { path: '/wallet', label: 'Wallet' },
+            { path: '/leaderboard', label: '🏆 Rankings' },
+            { path: '/wallet', label: '💰 Wallet' },
           ].map(({ path, label }) => (
             <Link key={path} to={path} style={{
-              padding: '0.4rem 0.9rem', borderRadius: 'var(--radius-sm)',
-              fontSize: '0.85rem', fontWeight: 500,
-              color: isActive(path) ? 'var(--accent)' : 'var(--text2)',
-              background: isActive(path) ? 'var(--bg3)' : 'transparent',
-              transition: 'all 0.2s'
+              padding: '0.5rem 1rem', borderRadius: 'var(--radius-sm)',
+              fontSize: '0.85rem', fontWeight: 600,
+              color: isActive(path) ? 'var(--cyan)' : 'var(--text2)',
+              background: isActive(path) ? 'rgba(0,217,255,0.1)' : 'transparent',
+              border: isActive(path) ? '1px solid rgba(0,217,255,0.3)' : '1px solid transparent',
+              transition: 'all 0.3s ease'
             }}>{label}</Link>
           ))}
         </div>
@@ -63,12 +65,14 @@ export default function Navbar() {
         {user ? (
           <>
             <div style={{
-              display: 'flex', alignItems: 'center', gap: '0.5rem',
-              background: 'var(--bg3)', border: '1px solid var(--border2)',
-              borderRadius: '100px', padding: '0.35rem 0.85rem',
-              fontSize: '0.85rem', fontWeight: 500
+              display: 'flex', alignItems: 'center', gap: '0.6rem',
+              background: 'linear-gradient(135deg, rgba(46,204,113,0.15), rgba(46,204,113,0.08))',
+              border: '1px solid rgba(46,204,113,0.3)',
+              borderRadius: '100px', padding: '0.5rem 1rem',
+              fontSize: '0.85rem', fontWeight: 700,
+              color: 'var(--success)'
             }}>
-              <div style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--neon)' }} />
+              <div style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--success)' }} />
               KES {balance.toLocaleString()}
             </div>
             <span style={{ fontSize: '0.85rem', color: 'var(--text2)' }}>

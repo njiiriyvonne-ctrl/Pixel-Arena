@@ -9,25 +9,31 @@ export default function Home() {
       minHeight: '100vh', display: 'flex', flexDirection: 'column',
       alignItems: 'center', justifyContent: 'center', textAlign: 'center',
       padding: '2rem', paddingTop: '80px',
-      background: 'radial-gradient(ellipse at 50% 20%, rgba(124,92,255,0.15) 0%, transparent 60%)'
+      background: 'radial-gradient(ellipse at 50% 20%, rgba(0,102,255,0.2) 0%, rgba(255,184,0,0.1) 100%)'
     }}>
       <div style={{
-        display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
-        background: 'rgba(0,255,179,0.08)', border: '1px solid rgba(0,255,179,0.2)',
-        color: 'var(--neon)', padding: '0.35rem 1rem', borderRadius: '100px',
-        fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.08em',
-        marginBottom: '1.5rem'
+        display: 'inline-flex', alignItems: 'center', gap: '0.6rem',
+        background: 'linear-gradient(135deg, rgba(0,217,255,0.15), rgba(0,102,255,0.15))',
+        border: '1px solid rgba(0,217,255,0.3)',
+        color: 'var(--cyan)', padding: '0.5rem 1.2rem', borderRadius: '100px',
+        fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.1em',
+        marginBottom: '2rem'
       }}>
-        <div style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--red)', animation: 'pulse 1.5s infinite' }} />
-        NAIROBI'S #1 GAMING ARENA
+        <div style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--danger)', animation: 'pulse 1.5s infinite' }} />
+        🎮 NAIROBI'S #1 GAMING ARENA
       </div>
 
       <h1 style={{
-        fontSize: 'clamp(2.5rem, 8vw, 5rem)', fontWeight: 800,
-        lineHeight: 0.95, marginBottom: '1.25rem', letterSpacing: '-0.02em'
+        fontSize: 'clamp(2.5rem, 10vw, 5.5rem)', fontWeight: 900,
+        lineHeight: 1.05, marginBottom: '1.5rem', letterSpacing: '-0.02em',
+        background: 'linear-gradient(135deg, #0066FF, #00D9FF)',
+        WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'
       }}>
-        COMPETE.<br />EARN.<br />
-        <span style={{ color: 'var(--neon)' }}>DOMINATE.</span>
+        COMPETE.
+        <br />
+        EARN.
+        <br />
+        <span style={{ color: 'var(--gold)' }}>DOMINATE.</span>
       </h1>
 
       <p style={{
